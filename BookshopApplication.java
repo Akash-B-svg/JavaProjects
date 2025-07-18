@@ -69,7 +69,8 @@ throw new IncorrectInputException("Number of copies cannot be negative");
 else if(copies<=m.stock)
 {
 int k=m.stock;
-System.out.println("Book_title: "+m.title+"\t"+"Book_author: "+m.author+"\t"+"Book_publisher: "+m.publisher+"\t"+"Book_Price: "+m.price+"\t"+"Book_Cost: "+m.price*copies);
+System.out.println("Book_title: "+m.title+"\t"+"Book_author: "+m.author+"\t"+"Book_publisher: "+m.publisher+"\t"+"Book_Price: "
++m.price+"\t"+"Book_Cost: "+m.price*copies);
 m.stock-=copies;
 System.out.println("The Remainig Books: "+m.stock);
 if(m.stock==0)
